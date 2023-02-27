@@ -10,7 +10,6 @@ from subprocess import PIPE, Popen
 
 import nltk.data
 import pycrfsuite
-import pysbd
 import spacy
 import stanza
 from bi_lstm_crf.app import WordsTagger
