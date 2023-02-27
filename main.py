@@ -175,8 +175,7 @@ class Experiment():
                     df_gold = self.util.get_gold_labels(df_true)
                     if not os.path.exists('data/'+file_lang+'/'+model.name+'/'+name):
                         df_pred = self.util.annotate(df_true, model)
-                        self.util.write_jsonl(
-                            df_pred, 'data/'+file_lang+'/' + model.name + '/' + name)
+                        df_pred.to_json('data/'+file_lang+'/' + model.name + '/' + name+'.jsonl', lines=True, force_ascii=False, orient='records')
                     else:
                         df_pred = jsonToDF('data/'+file_lang +
                                         '/' + model.name + '/' + name)
@@ -220,7 +219,7 @@ class Experiment():
 if __name__ == '__main__':
     
     parameters = {
-        "file_lang": ['pt'],
+        "file_lang": ['de'],
         #['fr', 'es', 'it', 'en', 'de']
         "model_lang": ['de'],
         "file_type": 'both',
@@ -236,7 +235,7 @@ if __name__ == '__main__':
     trained = ['transformer', 'crf', 'bilstm_crf']
 
     trainers = ['transformer']
-    models = ['transformer','bilstm_crf']
+    models = ['crf']
 
     result = pd.DataFrame(columns=columns_eval)
     rounds = 1
@@ -252,11 +251,10 @@ if __name__ == '__main__':
         eval = experiment.run(round)
         result = pd.concat([result, eval], ignore_index=True)
 
-    #result = result.rename(columns={'File': 'Type'})
     print(result)
-    path = 'data/evaluation/result_check_' + '_'.join(parameters['file_lang'])+'_'+\
+    path = 'data/result_check_' + '_'.join(parameters['file_lang'])+'_'+\
         '_'.join(models) + '_' + "_".join(parameters["model_lang"]) + \
         '_'+parameters["model_type"]+'__' + \
         parameters["file_type"]+'_R'+str(rounds)+'.csv'
-    result.to_csv(path, index=False)
+    #result.to_csv(path, index=False)
 

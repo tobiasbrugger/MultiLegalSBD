@@ -1,4 +1,4 @@
-accelerate==0.13.2
+accelerate==0.16.0
 bi-lstm-crf==0.2.1
 datasets==2.6.1
 evaluate==0.3.0
