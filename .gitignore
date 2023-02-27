@@ -8,7 +8,6 @@
 /utility
 *.csv
 *.png
-*.txt
 *.md
 *.pdf
 *.json
