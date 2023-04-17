@@ -24,7 +24,6 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 
 ## Models
 ### Examples
-
 for training see https://github.com/tobiasbrugger/MultiLegalSBD/blob/master/trainer.py
 
 for model usage see https://github.com/tobiasbrugger/MultiLegalSBD/blob/master/models.py
@@ -56,7 +55,9 @@ Changing 'SIGKILL' to 'SIGTERM' in the file 'file_based_local_timer.py' (where t
 
 ### BiLSTM-CRF Models
 (found here: https://github.com/tobiasbrugger/MultiLegalSBD/tree/master/models)
+
 requires installed bi_lstm_crf library (https://github.com/jidasheng/bi-lstm-crf)
+
 ```py
 from bi_lstm_crf.app import WordsTagger
 from tokenizer import sentences2tokens
@@ -73,6 +74,7 @@ labels, sequence = tagger([tokens])
 
 ### CRF Models
 (found here: https://github.com/tobiasbrugger/MultiLegalSBD/tree/master/models)
+
 requires installed pycrfsuite (https://pypi.org/project/python-crfsuite/)
 ```py
 import pycrfsuite
