@@ -2,11 +2,11 @@
 
 Code and models for my paper "MultiLegalSBD: A Multilingual Legal Sentence Boundary Detection Dataset" found at: -
 
-The transformers models can also be found at: found here: https://huggingface.co/models?search=rcds/distilbert-sbd
+The transformers models can also be found at: https://huggingface.co/models?search=rcds/distilbert-sbd
 
-The data can also be found at: https://huggingface.co/datasets/rcds/MultiLegalSBD
+The datasets can also be found at: https://huggingface.co/datasets/rcds/MultiLegalSBD
 
-The code was used to train and evaluate CRF, BiLSTM-CRF and transformer models on legal data in French, Spanish, Italian, German and English.
+The code was used to train and evaluate CRF, BiLSTM-CRF and transformer models on legal data in French, Spanish, Italian, German, English and Portuguese.
 
 ## Disclaimer
 
