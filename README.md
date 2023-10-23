@@ -91,3 +91,24 @@ tokens = [token.group() for token in sentences2tokens(text)]
 feat = features.generate_features(tokens) # pycrfsuite takes features as input rather than tokenized text
 labels = tagger.tag(feat)
 ```
+
+# Citation
+´´´
+@inproceedings{10.1145/3594536.3595132,
+author = {Brugger, Tobias and St\"{u}rmer, Matthias and Niklaus, Joel},
+title = {MultiLegalSBD: A Multilingual Legal Sentence Boundary Detection Dataset},
+year = {2023},
+isbn = {9798400701979},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3594536.3595132},
+doi = {10.1145/3594536.3595132},
+abstract = {Sentence Boundary Detection (SBD) is one of the foundational building blocks of Natural Language Processing (NLP), with incorrectly split sentences heavily influencing the output quality of downstream tasks. It is a challenging task for algorithms, especially in the legal domain, considering the complex and different sentence structures used. In this work, we curated a diverse multilingual legal dataset consisting of over 130'000 annotated sentences in 6 languages. Our experimental results indicate that the performance of existing SBD models is subpar on multilingual legal data. We trained and tested monolingual and multilingual models based on CRF, BiLSTM-CRF, and transformers, demonstrating state-of-the-art performance. We also show that our multilingual models outperform all baselines in the zero-shot setting on a Portuguese test set. To encourage further research and development by the community, we have made our dataset, models, and code publicly available.},
+booktitle = {Proceedings of the Nineteenth International Conference on Artificial Intelligence and Law},
+pages = {42–51},
+numpages = {10},
+keywords = {Natural Language Processing, Sentence Boundary Detection, Text Annotation, Legal Document Analysis, Multilingual},
+location = {Braga, Portugal},
+series = {ICAIL '23}
+}
+´´´
