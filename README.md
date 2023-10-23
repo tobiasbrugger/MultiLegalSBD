@@ -93,7 +93,7 @@ labels = tagger.tag(feat)
 ```
 
 # Citation
-´´´
+```
 @inproceedings{10.1145/3594536.3595132,
 author = {Brugger, Tobias and St\"{u}rmer, Matthias and Niklaus, Joel},
 title = {MultiLegalSBD: A Multilingual Legal Sentence Boundary Detection Dataset},
@@ -111,4 +111,4 @@ keywords = {Natural Language Processing, Sentence Boundary Detection, Text Annot
 location = {Braga, Portugal},
 series = {ICAIL '23}
 }
-´´´
+```
