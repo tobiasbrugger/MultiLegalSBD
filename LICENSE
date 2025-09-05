@@ -1,0 +1,19 @@
+MultiLegalSBD - Dual License
+
+This project uses dual licensing:
+
+## Source Code
+All source code in this repository is licensed under the MIT License.
+See LICENSE-CODE for the full license text.
+
+## Models and Datasets
+All trained models, datasets, and related artifacts are licensed under 
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+See LICENSE-MODELS for the full license text.
+
+## File Classification
+- Code: All .py, .js, .html, .css, .json, .yaml, .yml, .sh, .dockerfile, and similar files
+- Models: All .pkl, .joblib, .h5, .pt, .pth, .onnx, .pb, .tflite files and model directories
+- Datasets: All .csv, .json, .xml, .txt data files in data/ directories
+- Documentation: Licensed under CC BY 4.0 unless otherwise specified
+
