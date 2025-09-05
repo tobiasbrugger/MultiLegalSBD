@@ -112,3 +112,13 @@ location = {Braga, Portugal},
 series = {ICAIL '23}
 }
 ```
+
+# License
+
+This project uses dual licensing:
+
+- **Source Code**: [MIT License](LICENSE-CODE)
+- **Models & Datasets**: [CC BY 4.0](LICENSE-MODELS)
+
+See [LICENSE](LICENSE) for details on which files fall under which license.
+
